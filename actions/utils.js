@@ -6,7 +6,7 @@
 
 /**
  *
- * Returns a log ready string of the action input parameters.
+ * Returns a log ready string of the action input parameters
  * The `Authorization` header content will be replaced by '<hidden>'.
  *
  * @param {object} params action input parameters.
