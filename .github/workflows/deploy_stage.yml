@@ -30,7 +30,7 @@ jobs:
       - name: Auth
         env:
           AIO_CLI_ENV: stage
-        uses: adobe/aio-apps-action@3d88b5a231f1bebff08b6687775f26b8952bb481
+        uses: adobe/aio-apps-action@2e1f4cadf0bafff66d9637b395d727aace6f6518
         with:
           os: ${{ matrix.os }}
           command: oauth_sts
@@ -56,7 +56,7 @@ jobs:
           AIO_PROJECT_WORKSPACE_ID: ${{ secrets.AIO_PROJECT_WORKSPACE_ID_STAGE }}
           AIO_PROJECT_WORKSPACE_NAME: ${{ secrets.AIO_PROJECT_WORKSPACE_NAME_STAGE }}
           AIO_PROJECT_WORKSPACE_DETAILS_SERVICES: ${{ secrets.AIO_PROJECT_WORKSPACE_DETAILS_SERVICES_STAGE }}
-        uses: adobe/aio-apps-action@3d88b5a231f1bebff08b6687775f26b8952bb481
+        uses: adobe/aio-apps-action@2e1f4cadf0bafff66d9637b395d727aace6f6518
         with:
           os: ${{ matrix.os }}
           command: deploy
